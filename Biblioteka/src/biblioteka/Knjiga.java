@@ -5,7 +5,13 @@ import java.util.LinkedList;
 public class Knjiga {
 	String naslov;
 	String isbn;
-	String autori;
+	LinkedList<Autor> autori;
+	public LinkedList<Autor> getAutori() {
+		return autori;
+	}
+	public void setAutori(LinkedList<Autor> autori) {
+		this.autori = autori;
+	}
 	String izdavac;
 	String izdanje;
 	public String getNaslov() {
@@ -20,12 +26,7 @@ public class Knjiga {
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-	public String getAutori() {
-		return autori;
-	}
-	public void setAutori(String autori) {
-		this.autori = autori;
-	}
+	
 	public String getIzdavac() {
 		return izdavac;
 	}
